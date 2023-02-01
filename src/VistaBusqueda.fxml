@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorBusqueda">
+   <children>
+      <Text layoutX="56.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del personaje a buscar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombrePersonaje" layoutX="56.0" layoutY="68.0" text="Nombre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBusqueda" layoutX="56.0" layoutY="107.0" mnemonicParsing="false" onAction="#Buscar" text="Buscar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="annadirPersonaje" layoutX="577.0" layoutY="415.0" mnemonicParsing="false" onAction="#mostrarAnnadir" text="+">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <ListView fx:id="lista" fixedCellSize="20.0" layoutX="56.0" layoutY="177.0" prefHeight="217.0" prefWidth="527.0" />
+      <Text layoutX="56.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personajes coincidentes con el nombre:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnEliminar" layoutX="50.0" layoutY="437.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar selección">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

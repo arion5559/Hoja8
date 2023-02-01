@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorAnnadir">
+   <children>
+      <Text layoutX="32.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreAnnadir" layoutX="32.0" layoutY="40.0" promptText="Nombre del personaje">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="37.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinero">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="selectorDeClase" layoutX="32.0" layoutY="175.0" prefHeight="47.0" prefWidth="200.0" promptText="Clase" />
+      <TextField fx:id="dineroPersonaje" layoutX="33.0" layoutY="105.0" promptText="1, 2, 100, 20000...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="39.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAtras" layoutX="13.0" layoutY="361.0" mnemonicParsing="false" onAction="#volver" text="&lt;- Atrás">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnnadir" layoutX="445.0" layoutY="295.0" mnemonicParsing="false" onAction="#annadir" text="Añadir">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMostrarClases" layoutX="341.0" layoutY="188.0" mnemonicParsing="false" onAction="#mostrarClases" text="Mostrar clases">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
